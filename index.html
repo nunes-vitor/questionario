@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionário</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="icon" type="image/png" href="imagens/icone.jpg">
+</head>
+<body>
+  <h1>Questionário</h1>
+  <form id="question-form">
+    <label for="name">Qual o seu nome?</label>
+    <input type="text" id="name" required><br>
+  
+    <label for="age">Quantos anos você tem?</label>
+    <input type="number" id="age" min="0" required><br>
+  
+    <label for="language">Qual linguagem de programação você está estudando?</label>
+    <select id="language" required>
+      <option value="">Selecione uma linguagem</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+      <option value="Java">Java</option>
+      <option value="C++">C++</option>
+      <option value="Ruby">Ruby</option>
+    </select><br>
+  
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
